@@ -127,9 +127,16 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
     <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem40.png" height='350'/>
 
+    6.2. Em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem41.png" height='25'/> procure por <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem42.png" height='25'/> e clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem43.png" height='25'/> para copiar a localização do cluster. Você deve copiar algo parecido com o seguinte: `dataops-impacta-cluster.cicvf35nr49i.us-east-1.redshift.amazonaws.com:5439/dev`
+
+7.	Volte para o DBeaver, na tela de configuração de conexão (Connection Settings) e configure o seguinte:
+
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem44.png" height='350'/>
+
+
 <div class="footer">
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-03-20 17:55:24
+Last update: 2022-03-20 17:57:32
 </div>
