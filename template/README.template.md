@@ -113,9 +113,11 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
 4.	Uma nova janela para criar uma conexão será aberta (`Connect to a database`). Caso não veja a janela, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem33.png" height='25'/>
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem33.png" height='220'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem34.png" height='220'/>
 
+5.	Na janela `Connect to a database` comece a escrever `Redshift` no campo de pesquisa para filtrar, selecione a opção do Redshift e depois em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem35.png" height='25'/>
 
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem36.png" height='220'/>
 
 <div class="footer">
     &copy; 2022 Fernando Sousa
