@@ -131,7 +131,7 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
 7.	Volte para o DBeaver, na tela de configuração de conexão (Connection Settings) e configure o seguinte:
 
-    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem43.png" height='350'/>
+    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem43.png" height='380'/>
 
     7.1. Host/Instance: localização do cluster copiada no passo anterior, até antes do `:`. Deve ser algo parecido com o seguinte: `dataops-impacta-cluster.cicvf35nr49i.us-east-1.redshift.amazonaws.com`
 
@@ -147,11 +147,69 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
     7.6. Se tiver problemas para conectar, verifique os passos novamente, principalmente em relação ao Security Group e a permissão para acesso público. Se o problema ainda persistir, tente criar novamente o cluster com outro nome.
 
+8.	Você verá a conexão criada ao lado esquerdo. Clique na seta ao lado do nome da conexão para conectar
 
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem48.png" height='350'/>
+
+
+## Importar dados do S3
+
+1.	No DBeaver, clique com o botão direito na conexão criada anteriormente e selecione a opção `SQL Editor` --> `Open SQL script`.
+
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem49.png" height='350'/>
+ 
+2.	Na janela aberta, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem50.png" height='25'/>
+
+3.	Uma nova área será aberta a direita para escrever scripts SQL
+
+4.	Crie uma nova tabela para receber os dados de vacinas, executando o seguinte script:
+
+```sql
+CREATE TABLE vacinas (
+	document_id									varchar(100),
+	paciente_id									varchar(100),
+	paciente_idade								smallint,
+	paciente_datanascimento						date,
+	paciente_enumsexobiologico					varchar(2),
+	paciente_racacor_codigo						smallint,
+	paciente_racacor_valor						varchar(15),
+	paciente_endereco_coibgemunicipio			int,
+	paciente_endereco_copais					smallint,
+	paciente_endereco_nmmunicipio				varchar(100),
+	paciente_endereco_nmpais					varchar(50),
+	paciente_endereco_uf						varchar(2),
+	paciente_endereco_cep						varchar(10),
+	paciente_nacionalidade_enumnacionalidade	varchar(2),
+	estabelecimento_valor						int,
+	estabelecimento_razaosocial					varchar(500),
+	estalecimento_nofantasia					varchar(500),
+	estabelecimento_municipio_codigo			int,
+	estabelecimento_municipio_nome				varchar(100),
+	estabelecimento_uf							varchar(2),
+	vacina_grupoatendimento_codigo				int,
+	vacina_grupoatendimento_nome				varchar(100),
+	vacina_categoria_codigo						smallint,
+	vacina_categoria_nome						varchar(50),
+	vacina_lote									varchar(30),
+	vacina_fabricante_nome						varchar(50),
+	vacina_fabricante_referencia				varchar(50),
+	vacina_dataaplicacao						date,
+	vacina_descricao_dose						varchar(15),
+	vacina_codigo								smallint,
+	vacina_nome									varchar(200),
+	sistema_origem								varchar(100),
+	data_importacao_rnds						varchar(30),
+	id_sistema_origem							int
+);
+```
+
+    4.1.Para executar no DBeaver, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem51.png" height='25'/> ao lado esquerdo do script. Você deve receber um resultado parecido com o seguinte abaixo do script:
+
+    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem52.png" height='350'/>
 
 <div class="footer">
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-03-20 18:02:43
+Last update: 2022-03-20 18:11:21
 </div>
