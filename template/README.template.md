@@ -28,7 +28,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 4.	Na tela de criação do cluster preencha os seguintes campos:
 
-    4.1.	`Cluster identifier`: `dataops-impacta-cluster`
+    4.1.	`Cluster identifier`: `dataops-cluster`
 
     4.2.	Selecione a opção `Production`
 
@@ -127,13 +127,13 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
     <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem40.png" height='350'/>
 
-    6.2. Em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem41.png" height='25'/> procure por <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem66.png" height='25'/> e clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem42.png" height='25'/> para copiar a localização do cluster. Você deve copiar algo parecido com o seguinte: `dataops-impacta-cluster.cicvf35nr49i.us-east-1.redshift.amazonaws.com:5439/dev`
+    6.2. Em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem41.png" height='25'/> procure por <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem66.png" height='25'/> e clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem42.png" height='25'/> para copiar a localização do cluster. Você deve copiar algo parecido com o seguinte: `dataops-cluster.cicvf35nr49i.us-east-1.redshift.amazonaws.com:5439/dev`
 
 7.	Volte para o DBeaver, na tela de configuração de conexão (Connection Settings) e configure o seguinte:
 
     <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem43.png" height='380'/>
 
-    7.1. Host/Instance: localização do cluster copiada no passo anterior, até antes do `:`. Deve ser algo parecido com o seguinte: `dataops-impacta-cluster.cicvf35nr49i.us-east-1.redshift.amazonaws.com`
+    7.1. Host/Instance: localização do cluster copiada no passo anterior, até antes do `:`. Deve ser algo parecido com o seguinte: `dataops-cluster.cicvf35nr49i.us-east-1.redshift.amazonaws.com`
 
     7.2. Password: Senha criada para o cluster na primeira parte deste laboratório
 
