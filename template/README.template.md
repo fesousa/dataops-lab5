@@ -32,7 +32,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     4.2.	Selecione a opção `Production`
 
-    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem3.png" height='100'/>
+    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem3.png" height='130'/>
  
     4.3.	Em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem6.png" height='25'/> selecione <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem4.png" height='25'/>
 
@@ -52,7 +52,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 6.	Em  <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem13.png" height='25'/>  desmarque a opção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem14.png" height='25'/>
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem15.png" height='100'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem15.png" height='70'/>
  
 
 7.	Abra e seção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem16.png" height='25'/> que apareceu
@@ -63,11 +63,11 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 9.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem20.png" height='25'/>
 
-a.	Se receber a mensagem de erro `Vpc associated with db subnet group does not exist`, crie um primeiro cluster com a opção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem21.png" height='25'/>  de <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem22.png" height='25'/> habilitada, e depois criem um novo cluster com as configurações do lab. O primeiro cluster pode ser deletado.
+    9.1.	Se receber a mensagem de erro `Vpc associated with db subnet group does not exist`, crie um primeiro cluster com a opção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem21.png" height='25'/>  de <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem22.png" height='25'/> habilitada, e depois crie um novo cluster com as configurações do lab. O primeiro cluster pode ser deletado.
 
 10.	Veja o cluster sendo criado na tela
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem23.png" height='100'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem23.png" height='200'/>
 
 
 
