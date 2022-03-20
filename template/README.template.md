@@ -210,6 +210,27 @@ Para os parâmetros utilizamos:
 ${code/count_vacinas.sql}
 ```
 
+## Executar queries no Console do Amazon Redshift
+
+1.	Volte ao console do Redshift na AWS
+
+2.	No menu lateral, clique em `Editor` e então em `Query Editor`
+
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem54.png" height='350'/>
+ 
+3.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem55.png" height='25'/> para conectar em um cluster do Redshift
+
+4.	Na janela de configuração da conexão (Connect to database) configure:
+
+    4.1. Database name: dev
+
+    4.2. Database user: awsuser
+
+    4.3. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem56.png" height='25'/>
+
+5.	Utilize o editor de texto <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem57.png" height='25'/> para executar consultas e instruções SQL. Por exemplo: `select * from vacinas`
+
+
 <div class="footer">
     &copy; 2022 Fernando Sousa
     <br/>
