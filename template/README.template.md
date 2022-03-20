@@ -131,7 +131,7 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
 7.	Volte para o DBeaver, na tela de configuração de conexão (Connection Settings) e configure o seguinte:
 
-    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem43.png" height='350'/>
+    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem43.png" height='380'/>
 
     7.1. Host/Instance: localização do cluster copiada no passo anterior, até antes do `:`. Deve ser algo parecido com o seguinte: `dataops-impacta-cluster.cicvf35nr49i.us-east-1.redshift.amazonaws.com`
 
@@ -147,6 +147,26 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
     7.6. Se tiver problemas para conectar, verifique os passos novamente, principalmente em relação ao Security Group e a permissão para acesso público. Se o problema ainda persistir, tente criar novamente o cluster com outro nome.
 
+8.	Você verá a conexão criada ao lado esquerdo. Clique na seta ao lado do nome da conexão para conectar
+
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem48.png" height='350'/>
+
+
+## Importar dados do S3
+
+1.	No DBeaver, clique com o botão direito na conexão criada anteriormente e selecione a opção `SQL Editor` --> `Open SQL script`.
+
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem49.png" height='350'/>
+ 
+2.	Na janela aberta, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem50.png" height='25'/>
+
+3.	Uma nova área será aberta a direita para escrever scripts SQL
+
+4.	Crie uma nova tabela para receber os dados de vacinas, executando o seguinte script:
+
+```sql
+${code/vadinas.sql}
+```
 
 
 <div class="footer">
