@@ -85,9 +85,9 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
  
 4.	Na parte inferior, abra a aba <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem25.png" height='25'/>
 
-5.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem26.png" height='170'/>
+5.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem26.png" height='25'/>
 
-6.	Na nova tela, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem27.png" height='170'/> para inserir uma nova regra
+6.	Na nova tela, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem27.png" height='25'/> para inserir uma nova regra
  
 
 <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem28.png" height='170'/>
