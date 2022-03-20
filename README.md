@@ -207,9 +207,56 @@ CREATE TABLE vacinas (
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem52.png" height='350'/>
 
+
+5.	O próximo passo é importar os dados do arquivo CSV que coletamos no último lab e in-cluímos no S3
+
+6.	Abra uma nova aba de script no DBeaver
+
+7.	Execute o seguinte script:
+
+```sql
+COPY vacinas
+FROM 's3://dataops-dados-nomesobrenome/vacinas.csv'
+IAM_ROLE 'arn:aws:iam::ID_CONTA:role/LabRole'
+CSV
+DELIMITER ';'
+IGNOREHEADER 1
+REGION 'us-east-1';
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.1. Lembre-se de trocar `nomesobrenome` pelo seu bucket (criado no [Laboratório 1](https://github.com/fesousa/dataops-lab1)) e `ID_CONTA` pelo id da sua conta da AWS
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.2. O Comando COPY é um comando do Redshift que faz a cópia de um arquivo de dados ou do DynamoDB para uma tabela do Redshift. A sintaxe básica é:
+
+```sql
+COPY nome-tabela
+FROM origem (S3 ou DynamoDB)
+Autorização (IAM Role)
+[parâmetros (opcional)];
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No exemplo foi colocado para autorização o IAM Role 'arn:aws:iam::ID_CONTA:role/LabRole' (mesmo que foi associado ao cluster Redshift).
+Para os parâmetros utilizamos:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	CSV: formato do arquivo
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	DELIMITER `;`: caractere (;) delimitador das colunas no arquivo CSV
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	IGNOREHEADER 1: ignorar a primeira linha (cabeçalho)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	REGION 'us-east-1': região do Bucket e do Redshift
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	5.3.Se a importação obtiver sucesso, você deve receber um resultado parecido com este:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem53.png" height='350'/>
+ 
+    5.4. Agora você pode fazer consultas SQL na tabela vacinas do Redshift
+
+    5.5. Por exemplo, abra um novo script SQL e conte a quantidade de vacinas aplicadas por sexo biológico
+
+```sql
+select count(1) from vacinas group by paciente_enumsexobiologico  
+```
+
 <div class="footer">
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-03-20 18:13:54
+Last update: 2022-03-20 18:24:11
 </div>
