@@ -97,10 +97,19 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
     7.1. Type: <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem29.png" height='25'/>
 
     7.2. Source: <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem30.png" height='25'/>. Essa regra permite a conexão no Redshift (TCP na porta 5439) de qualquer lugar (0.0.0.0/0)
-
     
     7.3. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem31.png" height='25'/>
 
+## Conectar no Redshift com um cliente SQL
+
+
+1.	Acesse [https://dbeaver.io/download](https://dbeaver.io/download), baixe e instale o software DBeaver compatível com seu sistema operacional
+
+    1.1. DBeaver é um software cliente para bancos de dados que consegue conectar com di-ferentes bancos de dados SQL e NoSQL
+
+2.	Abra o DBeaver instalado
+
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem32.png" height='170'/>
 
 
 <div class="footer">
