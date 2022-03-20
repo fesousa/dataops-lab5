@@ -299,7 +299,7 @@ select count(1) from vacinas group by paciente_enumsexobiologico
  
     2.2. Selecione o cluster criado em aula
 
-    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem59.png" height='330'/>
+    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem59.png" height='270'/>
 
  
     2.3. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem60.png" height='25'/> e então em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem61.png" height='25'/>
@@ -315,5 +315,5 @@ select count(1) from vacinas group by paciente_enumsexobiologico
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-03-20 18:34:24
+Last update: 2022-03-20 18:42:59
 </div>
