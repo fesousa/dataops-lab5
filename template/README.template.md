@@ -77,29 +77,29 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
 1.	Procure na barra superior pelo serviço `VPC` e clique no serviço para abrir
 
-2.	Na tela da VPC, clique na opção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem24.png" height='25'/> no menu lateral esquerdo
+2.	Na tela da VPC, clique na opção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem64.png" height='25'/> no menu lateral esquerdo
 
-3.	Na lista de Security Groups mostrada, selecione o item que tem a coluna <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem25.png" height='25'/> com o valor `default`
+3.	Na lista de Security Groups mostrada, selecione o item que tem a coluna <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem65.png" height='25'/> com o valor `default`
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem26.png" height='170'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem24.png" height='170'/>
  
-4.	Na parte inferior, abra a aba <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem27.png" height='25'/>
+4.	Na parte inferior, abra a aba <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem25.png" height='25'/>
 
-5.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem28.png" height='170'/>
+5.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem26.png" height='170'/>
 
-6.	Na nova tela, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem29.png" height='170'/> para inserir uma nova regra
+6.	Na nova tela, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem27.png" height='170'/> para inserir uma nova regra
  
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem30.png" height='170'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem28.png" height='170'/>
 
 7.	Na segunda regra (recém adicionada) configure:
 
-    7.1. Type: <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem31.png" height='25'/>
+    7.1. Type: <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem29.png" height='25'/>
 
-    7.2. Source: <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem32.png" height='25'/>. Essa regra permite a conexão no Redshift (TCP na porta 5439) de qualquer lugar (0.0.0.0/0)
+    7.2. Source: <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem30.png" height='25'/>. Essa regra permite a conexão no Redshift (TCP na porta 5439) de qualquer lugar (0.0.0.0/0)
 
     
-    7.3. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem33.png" height='25'/>
+    7.3. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem31.png" height='25'/>
 
 
 
