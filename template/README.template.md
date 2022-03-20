@@ -255,7 +255,7 @@ ${code/count_vacinas.sql}
  
     2.2. Selecione o cluster criado em aula
 
-    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem59.png" height='330'/>
+    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem59.png" height='270'/>
 
  
     2.3. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem60.png" height='25'/> e então em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem61.png" height='25'/>
