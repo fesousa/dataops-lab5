@@ -165,7 +165,7 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 4.	Crie uma nova tabela para receber os dados de vacinas, executando o seguinte script:
 
 ```sql
-${code/vadinas.sql}
+${code/vacinas.sql}
 ```
 
     4.1.Para executar no DBeaver, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem51.png" height='25'/> ao lado esquerdo do script. Você deve receber um resultado parecido com o seguinte abaixo do script:
