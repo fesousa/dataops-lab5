@@ -34,9 +34,9 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem3.png" height='100'/>
  
-    4.3.	Em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem6.png" height='25'/> selecione <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem5.png" height='25'/>
+    4.3.	Em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem6.png" height='25'/> selecione <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem4.png" height='25'/>
 
-    4.4.	Em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem7.png" height='25'/> coloque <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem6.png" height='25'/>
+    4.4.	Em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem7.png" height='25'/> coloque <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem5.png" height='25'/>
 
     4.5.	Na seção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem8.png" height='25'/> coloque uma senha no campo <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem9.png" height='25'/>
 
@@ -76,5 +76,5 @@ a.	Se receber a mensagem de erro `Vpc associated with db subnet group does not e
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-03-20 17:18:56
+Last update: 2022-03-20 17:20:31
 </div>
