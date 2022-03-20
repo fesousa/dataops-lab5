@@ -172,6 +172,44 @@ ${code/vacinas.sql}
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem52.png" height='350'/>
 
+
+5.	O próximo passo é importar os dados do arquivo CSV que coletamos no último lab e in-cluímos no S3
+
+6.	Abra uma nova aba de script no DBeaver
+
+7.	Execute o seguinte script:
+
+```sql
+${code/import.sql}
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.1. Lembre-se de trocar `nomesobrenome` pelo seu bucket (criado no [Laboratório 1](https://github.com/fesousa/dataops-lab1)) e `ID_CONTA` pelo id da sua conta da AWS
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.2. O Comando COPY é um comando do Redshift que faz a cópia de um arquivo de dados ou do DynamoDB para uma tabela do Redshift. A sintaxe básica é:
+
+```sql
+${code/copy.sql}
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No exemplo foi colocado para autorização o IAM Role 'arn:aws:iam::ID_CONTA:role/LabRole' (mesmo que foi associado ao cluster Redshift).
+Para os parâmetros utilizamos:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	CSV: formato do arquivo
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	DELIMITER `;`: caractere (;) delimitador das colunas no arquivo CSV
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	IGNOREHEADER 1: ignorar a primeira linha (cabeçalho)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	REGION 'us-east-1': região do Bucket e do Redshift
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	5.3.Se a importação obtiver sucesso, você deve receber um resultado parecido com este:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem53.png" height='350'/>
+ 
+    5.4. Agora você pode fazer consultas SQL na tabela vacinas do Redshift
+
+    5.5. Por exemplo, abra um novo script SQL e conte a quantidade de vacinas aplicadas por sexo biológico
+
+```sql
+${code/count_vacinas.sql}
+```
+
 <div class="footer">
     &copy; 2022 Fernando Sousa
     <br/>
