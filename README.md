@@ -69,6 +69,37 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem23.png" height='170'/>
 
+11.	O cluster estará disponível quando a coluna `Status` mostrar `Available`. Enquanto isso, vamos configurar o acesso e baixar o cliente SQL
+
+## Configurar o grupo de segurança (security group)
+
+O grupo de segurança utilizado no cluster (default) não possibilita o acesso de fora da AWS. Vamos configurá-lo para permitir o acesso de qualquer local
+
+1.	Procure na barra superior pelo serviço `VPC` e clique no serviço para abrir
+
+2.	Na tela da VPC, clique na opção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem24.png" height='25'/> no menu lateral esquerdo
+
+3.	Na lista de Security Groups mostrada, selecione o item que tem a coluna <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem25.png" height='25'/> com o valor `default`
+
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem26.png" height='170'/>
+ 
+4.	Na parte inferior, abra a aba <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem27.png" height='25'/>
+
+5.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem28.png" height='170'/>
+
+6.	Na nova tela, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem29.png" height='170'/> para inserir uma nova regra
+ 
+
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem30.png" height='170'/>
+
+7.	Na segunda regra (recém adicionada) configure:
+
+    7.1. Type: <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem31.png" height='25'/>
+
+    7.2. Source: <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem32.png" height='25'/>. Essa regra permite a conexão no Redshift (TCP na porta 5439) de qualquer lugar (0.0.0.0/0)
+
+    
+    7.3. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem33.png" height='25'/>
 
 
 
@@ -76,5 +107,5 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-03-20 17:32:13
+Last update: 2022-03-20 17:37:35
 </div>
