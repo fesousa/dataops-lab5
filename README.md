@@ -40,9 +40,9 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     4.5.	Na seção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem8.png" height='25'/> coloque uma senha no campo <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem63.png" height='25'/>
 
-&nbsp:&nbsp:&nbsp:&nbsp:&nbsp:&nbsp:&nbsp:&nbsp:a. Precisa ter maiúscula, minúscula e número, com pelo menos 8 caracteres
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Precisa ter maiúscula, minúscula e número, com pelo menos 8 caracteres
 
-&nbsp:&nbsp:&nbsp:&nbsp:&nbsp:&nbsp:&nbsp:&nbsp:b. Guarde essa senha para poder conectar no Redshift           
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Guarde essa senha para poder conectar no Redshift           
 
 5.	Abra a seção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem9.png" height='25'/>
 
@@ -76,5 +76,5 @@ a.	Se receber a mensagem de erro `Vpc associated with db subnet group does not e
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-03-20 17:23:09
+Last update: 2022-03-20 17:24:56
 </div>
