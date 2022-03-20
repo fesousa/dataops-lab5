@@ -192,19 +192,24 @@ ${code/copy.sql}
 ```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No exemplo foi colocado para autorização o IAM Role 'arn:aws:iam::ID_CONTA:role/LabRole' (mesmo que foi associado ao cluster Redshift).
+
 Para os parâmetros utilizamos:
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	CSV: formato do arquivo
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	DELIMITER `;`: caractere (;) delimitador das colunas no arquivo CSV
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	IGNOREHEADER 1: ignorar a primeira linha (cabeçalho)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	REGION 'us-east-1': região do Bucket e do Redshift
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	5.3.Se a importação obtiver sucesso, você deve receber um resultado parecido com este:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.3.Se a importação obtiver sucesso, você deve receber um resultado parecido com este:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem53.png" height='350'/>
  
-    5.4. Agora você pode fazer consultas SQL na tabela vacinas do Redshift
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.4. Agora você pode fazer consultas SQL na tabela vacinas do Redshift
 
-    5.5. Por exemplo, abra um novo script SQL e conte a quantidade de vacinas aplicadas por sexo biológico
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.5. Por exemplo, abra um novo script SQL e conte a quantidade de vacinas aplicadas por sexo biológico
 
 ```sql
 ${code/count_vacinas.sql}
