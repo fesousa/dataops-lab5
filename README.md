@@ -123,7 +123,7 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
     6.1. Clique no nome do cluster para abrir as configurações (link na primeira coluna da lista de clusters)
 
-    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem39.png" height='350'/>
+    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem39.png" height='280'/>
 
     <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem40.png" height='350'/>
 
@@ -131,5 +131,5 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-03-20 17:52:45
+Last update: 2022-03-20 17:55:24
 </div>
