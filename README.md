@@ -107,21 +107,27 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
 2.	Abra o DBeaver instalado
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem32.png" height='220'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem32.png" height='300'/>
 
 3.	Feche a janela `Tip of the day`
 
 4.	Uma nova janela para criar uma conexão será aberta (`Connect to a database`). Caso não veja a janela, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem33.png" height='25'/>
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem34.png" height='220'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem34.png" height='300'/>
 
 5.	Na janela `Connect to a database` comece a escrever `Redshift` no campo de pesquisa para filtrar, selecione a opção do Redshift e depois em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem35.png" height='25'/>
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem36.png" height='220'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem36.png" height='300'/>
+
+6.	Volte ao console da AWS e verifique se o cluster já está disponível (<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem37.png" height='25'/>). Caso ainda não esteja, aguarde mais um pouco. Você pode clicar em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem38.png" height='25'/> para atualizar o status. Quando estiver disponível, faça o seguinte:
+
+    6.1. Clique no nome do cluster para abrir as configurações (link na primeira coluna da lista de clusters)
+
+    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem39.png" height='300'/>
 
 <div class="footer">
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-03-20 17:49:31
+Last update: 2022-03-20 17:51:31
 </div>
