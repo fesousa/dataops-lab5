@@ -103,13 +103,18 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 ## Conectar no Redshift com um cliente SQL
 
 
-1.	Acesse [https://dbeaver.io/download](https://dbeaver.io/download), baixe e instale o software DBeaver compatível com seu sistema operacional
-
-    1.1. DBeaver é um software cliente para bancos de dados que consegue conectar com di-ferentes bancos de dados SQL e NoSQL
+1.	Acesse [https://dbeaver.io/download](https://dbeaver.io/download), baixe e instale o software DBeaver compatível com seu sistema operacional. DBeaver é um software cliente para bancos de dados que consegue conectar com diferentes bancos de dados SQL e NoSQL
 
 2.	Abra o DBeaver instalado
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem32.png" height='170'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem32.png" height='220'/>
+
+3.	Feche a janela `Tip of the day`
+
+4.	Uma nova janela para criar uma conexão será aberta (`Connect to a database`). Caso não veja a janela, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem33.png" height='25'/>
+
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem33.png" height='220'/>
+
 
 
 <div class="footer">
