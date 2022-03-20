@@ -40,9 +40,9 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     4.5.	Na seção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem8.png" height='25'/> coloque uma senha no campo <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem63.png" height='25'/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Precisa ter maiúscula, minúscula e número, com pelo menos 8 caracteres
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;a. Precisa ter maiúscula, minúscula e número, com pelo menos 8 caracteres
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Guarde essa senha para poder conectar no Redshift           
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;b. Guarde essa senha para poder conectar no Redshift           
 
 5.	Abra a seção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem9.png" height='25'/>
 
@@ -67,7 +67,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 10.	Veja o cluster sendo criado na tela
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem23.png" height='200'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem23.png" height='180'/>
 
 
 
@@ -76,5 +76,5 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-03-20 17:26:45
+Last update: 2022-03-20 17:28:46
 </div>
