@@ -236,6 +236,37 @@ ${code/count_vacinas.sql}
 5.	Utilize o editor de texto <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem57.png" height='25'/> para executar consultas e instruções SQL. Por exemplo: `select * from vacinas`
 
 
+## Faça você mesmo
+1.	Execute a coleta de dados do [Laboratório 4](https://github.com/fesousa/dataops-lab4) novamente para poder atualizar os dados do Acre (AC)
+
+2.	Execute mais uma vez a coleta de dados do [Laboratório 4](https://github.com/fesousa/dataops-lab4), agora para coletar os dados de Tocantins (TO), que está neste link: [https://s3-sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/vacina/uf/2021-10-08/uf%3DTO/part-00000-ac297e25-1037-4cbd-9bc8-222e8f43bfe0.c000.csv](https://s3-sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/vacina/uf/2021-10-08/uf%3DTO/part-00000-ac297e25-1037-4cbd-9bc8-222e8f43bfe0.c000.csv)
+
+3.	Faça a importação para o Redshift novamente para os dois arquivos (AC e TO). Lembre-se de remover os registros anteriores do Redshift para não duplicar
+
+4.	Execute algumas consultas para verificar se os dados foram importados corretamente.
+
+## Finalização do Laboratório e Pausar Cluster Redshift
+
+2.	Quando finalizar, lembre-se de pausar o cluster para não gastar recursos. O cluster Redshift tem um custo alto.
+
+    2.1. Volte a lista dos clusters (Clusters --> Clusters)
+
+    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem58.png" height='330'/>
+ 
+    2.2. Selecione o cluster criado em aula
+
+    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem59.png" height='330'/>
+
+ 
+    2.3. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem60.png" height='25'/> e então em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem61.png" height='25'/>
+
+    2.4. Na nova tela, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem62.png" height='25'/>
+
+    2.5. Verifique se o cluster foi pausado
+
+
+
+
 <div class="footer">
     &copy; 2022 Fernando Sousa
     <br/>
