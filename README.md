@@ -131,12 +131,27 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
 7.	Volte para o DBeaver, na tela de configuração de conexão (Connection Settings) e configure o seguinte:
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem43.png" height='350'/>
+    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem43.png" height='350'/>
+
+    7.1. Host/Instance: localização do cluster copiada no passo anterior, até antes do `:`. Deve ser algo parecido com o seguinte: `dataops-impacta-cluster.cicvf35nr49i.us-east-1.redshift.amazonaws.com`
+
+    7.2. Password: Senha criada para o cluster na primeira parte deste laboratório
+
+    7.3. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem44.png" height='25'/> para testar as configurações. Você deve receber uma mensagem parecida com essa:
+
+    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem45.png" height='350'/>
+ 
+    7.4. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem46.png" height='25'/> para fechar a mensagem
+
+    7.5. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem47.png" height='25'/>
+
+    7.6. Se tiver problemas para conectar, verifique os passos novamente, principalmente em relação ao Security Group e a permissão para acesso público. Se o problema ainda persistir, tente criar novamente o cluster com outro nome.
+
 
 
 <div class="footer">
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-03-20 17:59:45
+Last update: 2022-03-20 18:02:43
 </div>
