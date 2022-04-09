@@ -27,7 +27,7 @@ CREATE TABLE vacinas (
 	vacina_fabricante_nome						varchar(50),
 	vacina_fabricante_referencia				varchar(50),
 	vacina_dataaplicacao						date,
-	vacina_descricao_dose						varchar(15),
+	vacina_descricao_dose						varchar(30),
 	vacina_codigo								smallint,
 	vacina_nome									varchar(200),
 	sistema_origem								varchar(100),
