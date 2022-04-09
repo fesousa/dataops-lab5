@@ -194,7 +194,7 @@ CREATE TABLE vacinas (
 	vacina_fabricante_nome						varchar(50),
 	vacina_fabricante_referencia				varchar(50),
 	vacina_dataaplicacao						date,
-	vacina_descricao_dose						varchar(15),
+	vacina_descricao_dose						varchar(30),
 	vacina_codigo								smallint,
 	vacina_nome									varchar(200),
 	sistema_origem								varchar(100),
@@ -315,5 +315,5 @@ select count(1) from vacinas group by paciente_enumsexobiologico
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-03-20 19:18:05
+Last update: 2022-04-09 14:55:51
 </div>
