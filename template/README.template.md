@@ -28,9 +28,9 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 4.	Na tela de criação do cluster preencha os seguintes campos:
 
-    4.1.	`Cluster identifier`: `dataops-cluster`
+    4.1.	`Identificador do cluster`: `dataops-cluster`
 
-    4.2.	Selecione a opção `Production`
+    4.2.	Selecione a opção `Produção`
 
     <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem3.png" height='130'/>
  
@@ -44,32 +44,37 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Guarde essa senha para poder conectar no Redshift           
 
-5.	Abra a seção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem9.png" height='25'/>
+5.	Na seção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem9.png" height='25'/>
 
-    5.1.	Em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem10.png" height='25'/> selecione <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem11.png" height='25'/>
+    5.1. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem10.png" height='25'/> 
+    
+    5.2. Selecione <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem11.png" height='25'/>
 
-    5.2.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem12.png" height='25'/>
+    5.3. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem12.png" height='25'/>
 
-6.	Em  <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem13.png" height='25'/>  desmarque a opção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem14.png" height='25'/>
+6. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem20.png" height='25'/>
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem15.png" height='70'/>
- 
+    6.1.	Se receber a mensagem de erro `Vpc associated with db subnet group does not exist`, crie um primeiro cluster com a opção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem21.png" height='25'/>  de <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem22.png" height='25'/> habilitada, e depois crie um novo cluster com as configurações do lab. O primeiro cluster pode ser deletado.
 
-7.	Abra e seção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem16.png" height='25'/> que apareceu
-
-8.	Configure a opção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem17.png" height='25'/> para  <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem18.png" height='25'/>
- 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem19.png" height='100'/>
-
-9.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem20.png" height='25'/>
-
-    9.1.	Se receber a mensagem de erro `Vpc associated with db subnet group does not exist`, crie um primeiro cluster com a opção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem21.png" height='25'/>  de <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem22.png" height='25'/> habilitada, e depois crie um novo cluster com as configurações do lab. O primeiro cluster pode ser deletado.
-
-10.	Veja o cluster sendo criado na tela
+7.	Veja o cluster sendo criado na tela
 
 <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem23.png" height='170'/>
 
-11.	O cluster estará disponível quando a coluna `Status` mostrar `Available`. Enquanto isso, vamos configurar o acesso e baixar o cliente SQL
+8.	O cluster estará disponível quando a coluna `Status` mostrar `Available`. Enquanto isso, vamos configurar o acesso e baixar o cliente SQL
+
+9. Quando o cluster estiver disponível (`Available`), selecione o checkbox na linha do clister criado
+
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem67.png" height='170'/>
+
+10. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem68.png" height='25'/> na parte superior da tabela e depois em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem69.png" height='25'/>
+
+    10.1. Se não estiver habilitado, atualize a página
+
+11. Na nova janela, selecione `Habilitar` e depois em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem70.png" height='25'/>
+
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem71.png" height='170'/>
+
+
 
 ## Configurar o grupo de segurança (security group)
 
