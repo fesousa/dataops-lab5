@@ -54,7 +54,6 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 6. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem20.png" height='25'/>
 
-    6.1.	Se receber a mensagem de erro `Vpc associated with db subnet group does not exist`, crie um primeiro cluster com a opção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem21.png" height='25'/>  de <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem22.png" height='25'/> habilitada, e depois crie um novo cluster com as configurações do lab. O primeiro cluster pode ser deletado.
 
 7.	Veja o cluster sendo criado na tela
 
@@ -320,5 +319,5 @@ select count(1) from vacinas group by paciente_enumsexobiologico
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-10-01 16:52:11
+Last update: 2022-10-01 16:55:17
 </div>
