@@ -71,7 +71,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 11. Na nova janela, selecione `Habilitar` e depois em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem70.png" height='25'/>
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem71.png" height='170'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem71.png" height='300'/>
 
 
 
