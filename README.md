@@ -71,7 +71,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 11. Na nova janela, selecione `Habilitar` e depois em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem70.png" height='25'/>
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem71.png" height='170'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem71.png" height='300'/>
 
 
 
@@ -319,5 +319,5 @@ select count(1) from vacinas group by paciente_enumsexobiologico
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-10-01 16:55:17
+Last update: 2022-10-01 16:56:32
 </div>
