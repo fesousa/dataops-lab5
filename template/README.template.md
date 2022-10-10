@@ -243,7 +243,7 @@ ${code/count_vacinas.sql}
 ## Faça você mesmo
 1.	Execute a coleta de dados do [Laboratório 4](https://github.com/fesousa/dataops-lab4) novamente para poder atualizar os dados do Acre (AC)
 
-2.	Execute mais uma vez a coleta de dados do [Laboratório 4](https://github.com/fesousa/dataops-lab4), agora para coletar os dados de Tocantins (TO), que está neste link: [https://s3-sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/vacina/uf/2021-10-08/uf%3DTO/part-00000-ac297e25-1037-4cbd-9bc8-222e8f43bfe0.c000.csv](https://s3-sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/vacina/uf/2021-10-08/uf%3DTO/part-00000-ac297e25-1037-4cbd-9bc8-222e8f43bfe0.c000.csv)
+2.	Execute mais uma vez a coleta de dados do [Laboratório 4](https://github.com/fesousa/dataops-lab4), agora para coletar os dados de Tocantins (TO), que está neste link: [https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SIPNI/COVID/uf/uf%3DTO/part-00000-4833d5b2-ada0-46e5-96db-728763bb9b69.c000.csv](https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SIPNI/COVID/uf/uf%3DTO/part-00000-4833d5b2-ada0-46e5-96db-728763bb9b69.c000.csv)
 
 3.	Faça a importação para o Redshift novamente para os dois arquivos (AC e TO). Lembre-se de remover os registros anteriores do Redshift para não duplicar
 
