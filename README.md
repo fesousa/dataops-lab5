@@ -177,17 +177,17 @@ CREATE TABLE vacinas (
 	paciente_enumsexobiologico					varchar(2),
 	paciente_racacor_codigo						smallint,
 	paciente_racacor_valor						varchar(15),
-	paciente_endereco_coibgemunicipio			int,
-	paciente_endereco_copais					smallint,
+	paciente_endereco_coibgemunicipio			varchar(10),
+	paciente_endereco_copais					varchar(10),
 	paciente_endereco_nmmunicipio				varchar(100),
 	paciente_endereco_nmpais					varchar(50),
-	paciente_endereco_uf						varchar(2),
+	paciente_endereco_uf						varchar(4),
 	paciente_endereco_cep						varchar(10),
-	paciente_nacionalidade_enumnacionalidade	varchar(2),
+	paciente_nacionalidade_enumnacionalidade	varchar(4),
 	estabelecimento_valor						int,
 	estabelecimento_razaosocial					varchar(500),
 	estalecimento_nofantasia					varchar(500),
-	estabelecimento_municipio_codigo			int,
+	estabelecimento_municipio_codigo			varchar(10),
 	estabelecimento_municipio_nome				varchar(100),
 	estabelecimento_uf							varchar(2),
 	vacina_grupoatendimento_codigo				int,
@@ -201,9 +201,7 @@ CREATE TABLE vacinas (
 	vacina_descricao_dose						varchar(30),
 	vacina_codigo								smallint,
 	vacina_nome									varchar(200),
-	sistema_origem								varchar(100),
-	data_importacao_rnds						varchar(30),
-	id_sistema_origem							int
+	sistema_origem								varchar(100)
 );
 ```
 
@@ -319,5 +317,5 @@ select count(1) from vacinas group by paciente_enumsexobiologico
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-10-01 16:56:32
+Last update: 2022-10-10 22:59:44
 </div>
