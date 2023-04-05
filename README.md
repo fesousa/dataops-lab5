@@ -192,7 +192,7 @@ CREATE TABLE vacinas (
 	estabelecimento_uf							varchar(2),
 	vacina_grupoatendimento_codigo				int,
 	vacina_grupoatendimento_nome				varchar(100),
-	vacina_categoria_codigo						smallint,
+	vacina_categoria_codigo						varchar(10),
 	vacina_categoria_nome						varchar(50),
 	vacina_lote									varchar(30),
 	vacina_fabricante_nome						varchar(50),
@@ -201,7 +201,10 @@ CREATE TABLE vacinas (
 	vacina_descricao_dose						varchar(30),
 	vacina_codigo								smallint,
 	vacina_nome									varchar(200),
-	sistema_origem								varchar(100)
+	sistema_origem								varchar(100),
+	data_importacao_rnds						varchar(100),
+	id_sistema_origem							varchar(100)
+
 );
 ```
 
@@ -285,7 +288,7 @@ select count(1) from vacinas group by paciente_enumsexobiologico
 ## Faça você mesmo
 1.	Execute a coleta de dados do [Laboratório 4](https://github.com/fesousa/dataops-lab4) novamente para poder atualizar os dados do Acre (AC)
 
-2.	Execute mais uma vez a coleta de dados do [Laboratório 4](https://github.com/fesousa/dataops-lab4), agora para coletar os dados de Tocantins (TO), que está neste link: [https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SIPNI/COVID/uf/uf%3DTO/part-00000-4833d5b2-ada0-46e5-96db-728763bb9b69.c000.csv](https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SIPNI/COVID/uf/uf%3DTO/part-00000-4833d5b2-ada0-46e5-96db-728763bb9b69.c000.csv)
+2.	Execute mais uma vez a coleta de dados do [Laboratório 4](https://github.com/fesousa/dataops-lab4), agora para coletar os dados de Tocantins (TO), que está neste link: [https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao/resource/5093679f-12c3-4d6b-b7bd-07694de54173](https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao/resource/5093679f-12c3-4d6b-b7bd-07694de54173)
 
 3.	Faça a importação para o Redshift novamente para os dois arquivos (AC e TO). Lembre-se de remover os registros anteriores do Redshift para não duplicar
 
@@ -317,5 +320,5 @@ select count(1) from vacinas group by paciente_enumsexobiologico
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2022-10-10 23:19:06
+Last update: 2023-04-05 22:59:27
 </div>
