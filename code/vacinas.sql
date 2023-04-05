@@ -21,7 +21,7 @@ CREATE TABLE vacinas (
 	estabelecimento_uf							varchar(2),
 	vacina_grupoatendimento_codigo				int,
 	vacina_grupoatendimento_nome				varchar(100),
-	vacina_categoria_codigo						smallint,
+	vacina_categoria_codigo						varchar(10),
 	vacina_categoria_nome						varchar(50),
 	vacina_lote									varchar(30),
 	vacina_fabricante_nome						varchar(50),
@@ -30,5 +30,8 @@ CREATE TABLE vacinas (
 	vacina_descricao_dose						varchar(30),
 	vacina_codigo								smallint,
 	vacina_nome									varchar(200),
-	sistema_origem								varchar(100)
+	sistema_origem								varchar(100),
+	data_importacao_rnds						varchar(100),
+	id_sistema_origem							varchar(100)
+
 );
