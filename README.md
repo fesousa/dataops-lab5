@@ -145,7 +145,7 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
     7.5. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem47.png" height='25'/>
 
-    7.6. Se tiver problemas para conectar, verifique os passos novamente, principalmente em relação ao Security Group e a permissão para acesso público. Se o problema ainda persistir, tente criar novamente o cluster com outro nome.
+    7.6. Se tiver problemas para conectar, verifique os passos novamente, principalmente em relação ao grupo de segurança, a permissão para acesso público e a senha criada. Se o problema ainda persistir, tente criar novamente o cluster com outro nome ou reiniciar a ssenha (procure a opção no Redshift).
 
 8.	Você verá a conexão criada ao lado esquerdo. Clique na seta ao lado do nome da conexão para conectar
 
@@ -154,52 +154,51 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
 ## Importar dados do S3
 
-1.	No DBeaver, clique com o botão direito na conexão criada anteriormente e selecione a opção `SQL Editor` --> `Open SQL script`.
+1.	No DBeaver, clique com o botão direito no banco de dados `dev` na conexão criada anteriormente e selecione a opção `SQL Editor` --> `Open SQL script`.
 
 <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem49.png" height='350'/>
- 
-2.	Na janela aberta, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem50.png" height='25'/>
 
-3.	Uma nova área será aberta a direita para escrever scripts SQL
+2.	Uma nova área será aberta a direita para escrever scripts SQL
 
-4.	Crie uma nova tabela para receber os dados de vacinas, executando o seguinte script:
+3.	Crie uma nova tabela para receber os dados de vacinas, executando o seguinte script:
+
 
 ```sql
 CREATE TABLE vacinas (
-	document_id									varchar(100),
-	paciente_id									varchar(100),
-	paciente_idade								smallint,
-	paciente_datanascimento						date,
-	paciente_enumsexobiologico					varchar(2),
-	paciente_racacor_codigo						smallint,
-	paciente_racacor_valor						varchar(15),
-	paciente_endereco_coibgemunicipio			varchar(10),
-	paciente_endereco_copais					varchar(10),
-	paciente_endereco_nmmunicipio				varchar(100),
-	paciente_endereco_nmpais					varchar(50),
-	paciente_endereco_uf						varchar(4),
-	paciente_endereco_cep						varchar(10),
-	paciente_nacionalidade_enumnacionalidade	varchar(4),
-	estabelecimento_valor						int,
-	estabelecimento_razaosocial					varchar(500),
-	estalecimento_nofantasia					varchar(500),
-	estabelecimento_municipio_codigo			varchar(10),
-	estabelecimento_municipio_nome				varchar(100),
-	estabelecimento_uf							varchar(2),
-	vacina_grupoatendimento_codigo				int,
-	vacina_grupoatendimento_nome				varchar(100),
-	vacina_categoria_codigo						varchar(10),
-	vacina_categoria_nome						varchar(50),
-	vacina_lote									varchar(30),
-	vacina_fabricante_nome						varchar(50),
-	vacina_fabricante_referencia				varchar(50),
-	vacina_dataaplicacao						date,
-	vacina_descricao_dose						varchar(30),
-	vacina_codigo								smallint,
-	vacina_nome									varchar(200),
-	sistema_origem								varchar(100),
-	data_importacao_rnds						varchar(100),
-	id_sistema_origem							varchar(100)
+	document_id										varchar(100),
+	paciente_id										varchar(100),
+	paciente_idade									smallint,
+	paciente_datanascimento							date,
+	paciente_enumsexobiologico						varchar(2),
+	paciente_racacor_codigo							smallint,
+	paciente_racacor_valor							varchar(15),
+	paciente_endereco_coibgemunicipio				varchar(10),
+	paciente_endereco_copais						varchar(10),
+	paciente_endereco_nmmunicipio					varchar(100),
+	paciente_endereco_nmpais						varchar(50),
+	paciente_endereco_uf							varchar(4),
+	paciente_endereco_cep							varchar(10),
+	paciente_nacionalidade_enumnacionalidade		varchar(4),
+	estabelecimento_valor							int,
+	estabelecimento_razaosocial						varchar(500),
+	estalecimento_nofantasia						varchar(500),
+	estabelecimento_municipio_codigo				varchar(10),
+	estabelecimento_municipio_nome					varchar(100),
+	estabelecimento_uf								varchar(2),
+	vacina_grupoatendimento_codigo					int,
+	vacina_grupoatendimento_nome					varchar(100),
+	vacina_categoria_codigo							varchar(10),
+	vacina_categoria_nome							varchar(50),
+	vacina_lote										varchar(30),
+	vacina_fabricante_nome							varchar(50),
+	vacina_fabricante_referencia					varchar(50),
+	vacina_dataaplicacao							date,
+	vacina_descricao_dose							varchar(30),
+	vacina_codigo									smallint,
+	vacina_nome										varchar(200),
+	sistema_origem									varchar(100),
+	data_importacao_rnds							varchar(100),
+	id_sistema_origem								varchar(100)
 
 );
 ```
@@ -209,7 +208,7 @@ CREATE TABLE vacinas (
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem52.png" height='350'/>
 
 
-5.	O próximo passo é importar os dados do arquivo CSV que coletamos no último lab e in-cluímos no S3
+5.	O próximo passo é importar os dados do arquivo CSV que coletamos no último lab e incluímos no S3
 
 6.	Abra uma nova aba de script no DBeaver
 
@@ -217,7 +216,7 @@ CREATE TABLE vacinas (
 
 ```sql
 COPY vacinas
-FROM 's3://dataops-dados-nomesobrenome/vacinas.csv'
+FROM 's3://dataops-dados-nomesobrenome/vacinas_ac.csv'
 IAM_ROLE 'arn:aws:iam::ID_CONTA:role/LabRole'
 CSV
 DELIMITER ';'
@@ -225,9 +224,14 @@ IGNOREHEADER 1
 REGION 'us-east-1';
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.1. Lembre-se de trocar `nomesobrenome` pelo seu bucket (criado no [Laboratório 1](https://github.com/fesousa/dataops-lab1)) e `ID_CONTA` pelo id da sua conta da AWS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1. Lembre-se de trocar:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.2. O Comando COPY é um comando do Redshift que faz a cópia de um arquivo de dados ou do DynamoDB para uma tabela do Redshift. A sintaxe básica é:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * `nomesobrenome` pelo seu bucket (criado no [Laboratório 1](https://github.com/fesousa/dataops-lab1))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * `ID_CONTA` pelo id da sua conta da AWS
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * `input/vacinas.sql` por um arquivo que exista no S3
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.2. O Comando COPY é um comando do Redshift que faz a cópia de um arquivo de dados ou do DynamoDB para uma tabela do Redshift. A sintaxe básica é:
 
 ```sql
 COPY nome-tabela
@@ -246,15 +250,23 @@ Para os parâmetros utilizamos:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	IGNOREHEADER 1: ignorar a primeira linha (cabeçalho)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	REGION 'us-east-1': região do Bucket e do Redshift
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	REGION `us-east-1``: região do Bucket e do Redshift
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.3.Se a importação obtiver sucesso, você deve receber um resultado parecido com este:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.3.Se a importação obtiver sucesso, você deve receber um resultado parecido com este:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem53.png" height='350'/>
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.4. Agora você pode fazer consultas SQL na tabela vacinas do Redshift
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.5. Por exemplo, abra um novo script SQL e conte a quantidade de vacinas aplicadas por sexo biológico
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.4.Se acontecer algum erro, faça as seguintes verificações:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	Verifique se as colunas da tabela criada estão de acordo com o que está no arquivo CSV do S3. Pode ter acontecido alguma alteração no padrão do arquivo, e precisa ser acertado no comando `CREATE TABLE`. Se houver diferença, remova a tabela e crie novamente com os campos corretos
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*	Para saber detalhes do erro, abra uma nova aba de consulta e consulte a tabela de erros: `select * from stl_load_errors`
+
+
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.5. Agora você pode fazer consultas SQL na tabela vacinas do Redshift
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.6. Por exemplo, abra um novo script SQL e conte a quantidade de vacinas aplicadas por sexo biológico
 
 ```sql
 select count(1) from vacinas group by paciente_enumsexobiologico  
@@ -264,25 +276,27 @@ select count(1) from vacinas group by paciente_enumsexobiologico
 
 1.	Volte ao console do Redshift na AWS
 
-2.	No menu lateral, clique em `Editor` e então em `Query Editor`
+2.	No menu lateral, clique em `Editor de consultas v2`
 
 <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem54.png" height='350'/>
  
-3.	Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem55.png" height='25'/> para conectar em um cluster do Redshift
+3. Clique no seu cluster, na lateral esquerda, para conectar
 
-4.	Na janela de configuração da conexão (Connect to database) configure:
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem72.png" width='100%'/>
 
-    4.1. Database name: dev
+4.	Na janela de configuração da conexão configure:
 
-    4.2. Database user: awsuser
+    4.1. Selecione `Temporary credentials`
+
+    4.2. User name: awsuser
 
     4.3. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem56.png" height='25'/>
 
-5.	Utilize o editor de texto <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem57.png" height='25'/> para executar consultas e instruções SQL. Por exemplo: `select * from vacinas`
+5.	Utilize o editor de texto ao lado direito para executar consultas e instruções SQL. Por exemplo: `select * from vacinas`
 
 
 ## Faça você mesmo
-1.	Execute a coleta de dados do [Laboratório 4](https://github.com/fesousa/dataops-lab4) novamente para poder atualizar os dados do Acre (AC)
+1.	Execute a coleta de dados do [Laboratório 4](https://github.com/fesousa/dataops-lab4) novamente para poder atualizar os dados do Acre (AC). Pegue os dados mais recentes e completos em ]https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao/resource/5093679f-12c3-4d6b-b7bd-07694de54173](https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao/resource/5093679f-12c3-4d6b-b7bd-07694de54173)
 
 2.	Execute mais uma vez a coleta de dados do [Laboratório 4](https://github.com/fesousa/dataops-lab4), agora para coletar os dados de Tocantins (TO), que está neste link: [https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao/resource/5093679f-12c3-4d6b-b7bd-07694de54173](https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao/resource/5093679f-12c3-4d6b-b7bd-07694de54173)
 
@@ -294,18 +308,13 @@ select count(1) from vacinas group by paciente_enumsexobiologico
 
 2.	Quando finalizar, lembre-se de pausar o cluster para não gastar recursos. O cluster Redshift tem um custo alto.
 
-    2.1. Volte a lista dos clusters (Clusters --> Clusters)
+    2.1. Volte a lista dos clusters (Clique em Clusters no lado esquedo)
 
-    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem58.png" height='330'/>
- 
     2.2. Selecione o cluster criado em aula
 
-    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem59.png" height='270'/>
+    2.3. Clique em `Ações` e então em `Pausar`
 
- 
-    2.3. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem60.png" height='25'/> e então em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem61.png" height='25'/>
-
-    2.4. Na nova tela, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem62.png" height='25'/>
+    2.4. Na nova tela, clique em `Pausar agora`
 
     2.5. Verifique se o cluster foi pausado
 
@@ -313,8 +322,8 @@ select count(1) from vacinas group by paciente_enumsexobiologico
 
 
 <div class="footer">
-    &copy; 2022 Fernando Sousa
+    &copy; 2023 Fernando Sousa
     <br/>
     
-Last update: 2023-09-03 13:48:03
+Last update: 2023-09-03 14:31:57
 </div>
