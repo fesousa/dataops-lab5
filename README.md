@@ -227,6 +227,7 @@ REGION 'us-east-1';
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1. Lembre-se de trocar:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * `nomesobrenome` pelo seu bucket (criado no [Laboratório 1](https://github.com/fesousa/dataops-lab1))
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * `ID_CONTA` pelo id da sua conta da AWS
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * `input/vacinas.sql` por um arquivo que exista no S3
@@ -278,7 +279,7 @@ select count(1) from vacinas group by paciente_enumsexobiologico
 
 2.	No menu lateral, clique em `Editor de consultas v2`
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem54.png" height='350'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem54.png" height='500'/>
  
 3. Clique no seu cluster, na lateral esquerda, para conectar
 
@@ -325,5 +326,5 @@ select count(1) from vacinas group by paciente_enumsexobiologico
     &copy; 2023 Fernando Sousa
     <br/>
     
-Last update: 2023-09-03 14:31:57
+Last update: 2023-09-03 14:33:44
 </div>
