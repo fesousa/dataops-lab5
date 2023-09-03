@@ -185,6 +185,7 @@ ${code/import.sql}
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1. Lembre-se de trocar:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * `nomesobrenome` pelo seu bucket (criado no [Laboratório 1](https://github.com/fesousa/dataops-lab1))
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * `ID_CONTA` pelo id da sua conta da AWS
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * `input/vacinas.sql` por um arquivo que exista no S3
@@ -233,7 +234,7 @@ ${code/count_vacinas.sql}
 
 2.	No menu lateral, clique em `Editor de consultas v2`
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem54.png" height='350'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem54.png" height='500'/>
  
 3. Clique no seu cluster, na lateral esquerda, para conectar
 
