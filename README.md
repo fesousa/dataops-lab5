@@ -165,41 +165,38 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
 ```sql
 CREATE TABLE vacinas (
-	document_id										varchar(100),
-	paciente_id										varchar(100),
-	paciente_idade									smallint,
-	paciente_datanascimento							date,
-	paciente_enumsexobiologico						varchar(2),
-	paciente_racacor_codigo							smallint,
-	paciente_racacor_valor							varchar(15),
-	paciente_endereco_coibgemunicipio				varchar(10),
-	paciente_endereco_copais						varchar(10),
-	paciente_endereco_nmmunicipio					varchar(100),
-	paciente_endereco_nmpais						varchar(50),
-	paciente_endereco_uf							varchar(4),
-	paciente_endereco_cep							varchar(10),
-	paciente_nacionalidade_enumnacionalidade		varchar(4),
-	estabelecimento_valor							int,
-	estabelecimento_razaosocial						varchar(500),
-	estalecimento_nofantasia						varchar(500),
-	estabelecimento_municipio_codigo				varchar(10),
-	estabelecimento_municipio_nome					varchar(100),
-	estabelecimento_uf								varchar(2),
-	vacina_grupoatendimento_codigo					int,
-	vacina_grupoatendimento_nome					varchar(100),
-	vacina_categoria_codigo							varchar(10),
-	vacina_categoria_nome							varchar(50),
-	vacina_lote										varchar(30),
-	vacina_fabricante_nome							varchar(50),
-	vacina_fabricante_referencia					varchar(50),
-	vacina_dataaplicacao							date,
-	vacina_descricao_dose							varchar(30),
-	vacina_codigo									smallint,
-	vacina_nome										varchar(200),
-	sistema_origem									varchar(100),
-	data_importacao_rnds							varchar(100),
-	id_sistema_origem								varchar(100)
-
+	document_id									varchar(100),
+	paciente_id									varchar(100),
+	paciente_idade								smallint,
+	paciente_dataNascimento						date,
+	paciente_enumSexoBiologico					varchar(2),
+	paciente_racaCor_codigo						smallint,
+	paciente_racaCor_valor						varchar(15),
+	paciente_endereco_coIbgeMunicipio			varchar(10),
+	paciente_endereco_coPais					varchar(10),
+	paciente_endereco_nmMunicipio				varchar(100),
+	paciente_endereco_nmPais					varchar(50),
+	paciente_endereco_uf						varchar(4),
+	paciente_endereco_cep						varchar(10),
+	paciente_nacionalidade_enumNacionalidade	varchar(4),
+	estabelecimento_valor						int,
+	estabelecimento_razaoSocial					varchar(500),
+	estalecimento_noFantasia					varchar(500),
+	estabelecimento_municipio_codigo			varchar(10),
+	estabelecimento_municipio_nome				varchar(100),
+	estabelecimento_uf							varchar(2),
+	vacina_grupoAtendimento_codigo				int,
+	vacina_grupoAtendimento_nome				varchar(100),
+	vacina_categoria_codigo						varchar(10),
+	vacina_categoria_nome						varchar(50),
+	vacina_lote									varchar(30),
+	vacina_fabricante_nome						varchar(50),
+	vacina_fabricante_referencia				varchar(50),
+	vacina_dataAplicacao						date,
+	vacina_descricao_dose						varchar(30),
+	vacina_codigo								smallint,
+	vacina_nome									varchar(200),
+	sistema_origem								varchar(100)
 );
 ```
 
@@ -326,5 +323,5 @@ select count(1) from vacinas group by paciente_enumsexobiologico
     &copy; 2023 Fernando Sousa
     <br/>
     
-Last update: 2023-09-03 14:33:44
+Last update: 2023-09-03 14:37:17
 </div>
