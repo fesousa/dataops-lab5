@@ -59,7 +59,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 9. Quando o cluster estiver disponível (`Available`), selecione o checkbox na linha do clister criado
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem67.png" height='170'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem67.png" width='100%' />
 
 10. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem68.png" height='25'/> na parte superior da tabela e depois em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem69.png" height='25'/>
 
@@ -79,9 +79,9 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
 2.	Na tela da VPC, clique na opção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem64.png" height='25'/> no menu lateral esquerdo
 
-3.	Na lista de Security Groups mostrada, selecione o item que tem a coluna <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem65.png" height='25'/> com o valor `default`
+3.	Na lista de grupos de segurança mostrada, selecione o item que tem a coluna <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem65.png" height='25'/> com o valor `default`
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem24.png" height='170'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem24.png" width='100%' />
  
 4.	Na parte inferior, abra a aba <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem25.png" height='25'/>
 
@@ -90,13 +90,13 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 6.	Na nova tela, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem27.png" height='25'/> para inserir uma nova regra
  
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem28.png" height='170'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem28.png" width='100%'/>
 
 7.	Na segunda regra (recém adicionada) configure:
 
-    7.1. Type: <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem29.png" height='25'/>
+    7.1. Tipo: <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem29.png" height='25'/>
 
-    7.2. Source: <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem30.png" height='25'/>. Essa regra permite a conexão no Redshift (TCP na porta 5439) de qualquer lugar (0.0.0.0/0)
+    7.2. Origem: <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem30.png" height='25'/>. Essa regra permite a conexão no Redshift (TCP na porta 5439) de qualquer lugar (0.0.0.0/0)
     
     7.3. Clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem31.png" height='25'/>
 
@@ -107,11 +107,11 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
 2.	Abra o DBeaver instalado
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem32.png" height='350'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem32.png" width='100%'/>
 
 3.	Feche a janela `Tip of the day`
 
-4.	Uma nova janela para criar uma conexão será aberta (`Connect to a database`). Caso não veja a janela, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem33.png" height='25'/>
+4.	Uma nova janela para criar uma conexão será aberta (`Connect to a database`). Caso não veja a janela, clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem33.png" height='25'/> no canto superior esquerdo
 
 <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem34.png" height='350'/>
 
@@ -123,9 +123,9 @@ O grupo de segurança utilizado no cluster (default) não possibilita o acesso d
 
     6.1. Clique no nome do cluster para abrir as configurações (link na primeira coluna da lista de clusters)
 
-    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem39.png" height='280'/>
+    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem39.png" width='100%'/>
 
-    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem40.png" height='350'/>
+    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem40.png" width='100%'/>
 
     6.2. Em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem41.png" height='25'/> procure por <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem66.png" height='25'/> e clique em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem42.png" height='25'/> para copiar a localização do cluster. Você deve copiar algo parecido com o seguinte: `dataops-cluster.cicvf35nr49i.us-east-1.redshift.amazonaws.com:5439/dev`
 
@@ -316,5 +316,5 @@ select count(1) from vacinas group by paciente_enumsexobiologico
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2023-09-03 13:29:40
+Last update: 2023-09-03 13:48:03
 </div>
