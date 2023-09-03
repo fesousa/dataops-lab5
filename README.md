@@ -24,21 +24,17 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 2.	Procure na barra superior pelo serviço `Redshift` e clique no serviço para abrir
 
-3.	Clique no botão  <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem2.png" height='25'/>
+3.	Clique no botão  <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem2.png" height='25'/> (talvez precise rolar a página um pouco para baixo)
 
 4.	Na tela de criação do cluster preencha os seguintes campos:
 
     4.1.	`Identificador do cluster`: `dataops-cluster`
 
-    4.2.	Selecione a opção `Produção`
+    4.2.	Em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem6.png" height='25'/> selecione <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem4.png" height='25'/>
 
-    <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem3.png" height='130'/>
- 
-    4.3.	Em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem6.png" height='25'/> selecione <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem4.png" height='25'/>
+    4.3.	Em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem7.png" height='25'/> coloque <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem5.png" height='25'/>
 
-    4.4.	Em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem7.png" height='25'/> coloque <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem5.png" height='25'/>
-
-    4.5.	Na seção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem8.png" height='25'/> coloque uma senha no campo <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem63.png" height='25'/>
+    4.3.	Na seção <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem8.png" height='25'/> coloque uma senha no campo <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem63.png" height='25'/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Precisa ter maiúscula, minúscula e número, com pelo menos 8 caracteres
 
@@ -57,9 +53,9 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
 7.	Veja o cluster sendo criado na tela
 
-<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem23.png" height='170'/>
+<img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem23.png" width='100%'/>
 
-8.	O cluster estará disponível quando a coluna `Status` mostrar `Available`. Enquanto isso, vamos configurar o acesso e baixar o cliente SQL
+8.	O cluster estará disponível quando a coluna `Status` mostrar `Available`.
 
 9. Quando o cluster estiver disponível (`Available`), selecione o checkbox na linha do clister criado
 
@@ -69,7 +65,7 @@ As instruções do laboratório estão em português. Para alterar o idioma, pro
 
     10.1. Se não estiver habilitado, atualize a página
 
-11. Na nova janela, selecione `Habilitar` e depois em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem70.png" height='25'/>
+11. Na nova janela, selecione `Ativar recurso Publicamente acessível` e depois em <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem70.png" height='25'/>
 
 <img src="https://raw.github.com/fesousa/dataops-lab5/master/images/Imagem71.png" height='300'/>
 
@@ -320,5 +316,5 @@ select count(1) from vacinas group by paciente_enumsexobiologico
     &copy; 2022 Fernando Sousa
     <br/>
     
-Last update: 2023-04-05 22:59:27
+Last update: 2023-09-03 13:29:40
 </div>
